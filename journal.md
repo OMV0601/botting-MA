@@ -329,3 +329,8 @@ Append-only log of every run. Written by run_daily.py.
 2026-09-29T13:38:38+00:00  INFO    BUY  ZBRA   weight=0.33% delta=$+16.50
 2026-09-29T13:38:38+00:00  INFO    BUY  ZETA   weight=0.33% delta=$+16.50
 2026-09-29T13:41:06+00:00  INFO  run recorded in state/last_run.json
+2026-09-29T20:02:50+00:00  INFO  === moving-average close-of-day summary 2026-09-29 ===
+2026-09-29T20:02:50+00:00  INFO  summarising Alpaca paper account PA3BW33Q5HH0
+2026-09-29T20:02:52+00:00  INFO  session P&L: -9.26 ($5,000.00 at the open -> $4,990.74 at the close, 391 minute marks)
+2026-09-29T20:02:52+00:00  INFO  close-of-day: equity=$4,989.50 positions=$4,994.46 across 303 names (traded today: True)
+2026-09-29T20:02:52+00:00  WARN  close-of-day email did not send; leaving the day open so the later fire retries
