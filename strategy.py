@@ -61,11 +61,19 @@ def eligible(close, volume, open_=None):
     return ok & (adv.rank(axis=1, ascending=False, na_option="keep") <= UNIVERSE_SIZE)
 
 
+# A moving average needs most of its window, not every day of it. With the
+# strict version, ONE missing daily bar -- routine for some names on Yahoo, the
+# live data feed -- blanks that stock's 200-day average for the next 200 days
+# and silently drops it from the book. The backtest's Alpaca data has no such
+# gaps, so tolerating a few keeps live trading the same rule that was tested.
+MIN_COVERAGE = 0.9
+
+
 def in_uptrend(close) -> pd.DataFrame:
     """True where the fast moving average is above the slow one."""
-    fast = close.rolling(FAST, min_periods=FAST).mean()
-    slow = close.rolling(SLOW, min_periods=SLOW).mean()
-    return (fast > slow) & slow.notna()
+    fast = close.rolling(FAST, min_periods=int(FAST * MIN_COVERAGE)).mean()
+    slow = close.rolling(SLOW, min_periods=int(SLOW * MIN_COVERAGE)).mean()
+    return (fast > slow) & slow.notna() & fast.notna()
 
 
 def target_weights(close, volume, open_) -> pd.DataFrame:
