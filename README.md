@@ -20,11 +20,13 @@ Crossovers react late. They get whipsawed in choppy, sideways markets, and they 
 
 ## Backtest
 
-Alpaca data including delisted companies, 2017–2026, with trading costs:
+From $5,000, trading costs included:
 
-| $5,000 → (2017–2026) | yearly return | worst drop | Sharpe | names held |
-|---|---|---|---|---|
-| see backtest workflow | **10.3%** | **−40%** | 0.60 | ~220 |
+| Data | Period | $5,000 → | Yearly return | Worst drop | Names held |
+|---|---|---|---|---|---|
+| Yahoo (survivors only, biased high) | Sep 2016–2026 | $14,203 | **11.0%** | **−43%** | ~300 |
+
+Yahoo only has companies that still exist, so real results are likely a bit lower. Losing years: 2018 (−9%), 2022 (−20%).
 
 Run it yourself from the **backtest** workflow in the Actions tab, or locally:
 
