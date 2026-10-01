@@ -366,3 +366,8 @@ Append-only log of every run. Written by run_daily.py.
 2026-10-01T13:35:22+00:00  INFO    SELL AON    weight=0.00% delta=$-16.82
 2026-10-01T13:35:22+00:00  INFO    SELL VRT    weight=0.00% delta=$-16.38
 2026-10-01T13:35:32+00:00  INFO  run recorded in state/last_run.json
+2026-10-01T20:02:48+00:00  INFO  === moving-average close-of-day summary 2026-10-01 ===
+2026-10-01T20:02:49+00:00  INFO  summarising Alpaca paper account PA3BW33Q5HH0
+2026-10-01T20:02:50+00:00  INFO  session P&L: +21.26 ($4,946.98 at the open -> $4,968.24 at the close, 391 minute marks)
+2026-10-01T20:02:50+00:00  INFO  close-of-day: equity=$4,967.76 positions=$4,922.68 across 300 names (traded today: True)
+2026-10-01T20:02:50+00:00  WARN  close-of-day email did not send; leaving the day open so the later fire retries
