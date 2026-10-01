@@ -351,3 +351,18 @@ Append-only log of every run. Written by run_daily.py.
 2026-09-30T20:02:50+00:00  INFO  session P&L: -41.69 ($4,998.47 at the open -> $4,956.78 at the close, 391 minute marks)
 2026-09-30T20:02:50+00:00  INFO  close-of-day: equity=$4,956.29 positions=$4,911.44 across 300 names (traded today: True)
 2026-09-30T20:02:50+00:00  WARN  close-of-day email did not send; leaving the day open so the later fire retries
+2026-10-01T13:31:07+00:00  INFO  === moving-average daily run 2026-10-01 (execute=True) ===
+2026-10-01T13:31:07+00:00  INFO  trading Alpaca paper account PA3BW33Q5HH0
+2026-10-01T13:31:07+00:00  INFO  account status=ACTIVE equity=$4,949.01 cash=$44.90
+2026-10-01T13:35:22+00:00  INFO  paper endpoint (set ALPACA_LIVE=true for real money)
+2026-10-01T13:35:22+00:00  INFO  account permits 4x margin; plan deploys 100.00% of the capital it was handed, so no leverage is used
+2026-10-01T13:35:22+00:00  INFO  plan: 8 orders, $132.10 turnover (2.67% of deployed capital), 300 target names
+2026-10-01T13:35:22+00:00  INFO    BUY  DIS    weight=0.33% delta=$+16.50
+2026-10-01T13:35:22+00:00  INFO    BUY  ICLR   weight=0.33% delta=$+16.50
+2026-10-01T13:35:22+00:00  INFO    BUY  IXUS   weight=0.33% delta=$+16.50
+2026-10-01T13:35:22+00:00  INFO    BUY  KKR    weight=0.33% delta=$+16.50
+2026-10-01T13:35:22+00:00  INFO    SELL ODFL   weight=0.00% delta=$-16.29
+2026-10-01T13:35:22+00:00  INFO    SELL ETR    weight=0.00% delta=$-16.63
+2026-10-01T13:35:22+00:00  INFO    SELL AON    weight=0.00% delta=$-16.82
+2026-10-01T13:35:22+00:00  INFO    SELL VRT    weight=0.00% delta=$-16.38
+2026-10-01T13:35:32+00:00  INFO  run recorded in state/last_run.json
