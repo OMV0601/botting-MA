@@ -389,3 +389,11 @@ Append-only log of every run. Written by run_daily.py.
 2026-10-02T20:02:53+00:00  INFO  session P&L: -1.29 ($4,997.15 at the open -> $4,995.86 at the close, 391 minute marks)
 2026-10-02T20:02:53+00:00  INFO  close-of-day: equity=$4,996.04 positions=$4,950.80 across 300 names (traded today: True)
 2026-10-02T20:02:53+00:00  WARN  close-of-day email did not send; leaving the day open so the later fire retries
+2026-10-05T13:31:07+00:00  INFO  === moving-average daily run 2026-10-05 (execute=True) ===
+2026-10-05T13:31:08+00:00  INFO  trading Alpaca paper account PA3BW33Q5HH0
+2026-10-05T13:31:08+00:00  INFO  account status=ACTIVE equity=$4,997.74 cash=$45.22
+2026-10-05T13:36:56+00:00  INFO  paper endpoint (set ALPACA_LIVE=true for real money)
+2026-10-05T13:36:57+00:00  INFO  account permits 4x margin; plan deploys 100.00% of the capital it was handed, so no leverage is used
+2026-10-05T13:36:57+00:00  INFO  plan: 1 orders, $16.80 turnover (0.34% of deployed capital), 299 target names
+2026-10-05T13:36:57+00:00  INFO    SELL CIBR   weight=0.00% delta=$-16.80
+2026-10-05T13:36:59+00:00  INFO  run recorded in state/last_run.json
