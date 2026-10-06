@@ -397,3 +397,16 @@ Append-only log of every run. Written by run_daily.py.
 2026-10-05T13:36:57+00:00  INFO  plan: 1 orders, $16.80 turnover (0.34% of deployed capital), 299 target names
 2026-10-05T13:36:57+00:00  INFO    SELL CIBR   weight=0.00% delta=$-16.80
 2026-10-05T13:36:59+00:00  INFO  run recorded in state/last_run.json
+2026-10-06T13:31:09+00:00  INFO  === moving-average daily run 2026-10-06 (execute=True) ===
+2026-10-06T13:31:10+00:00  INFO  trading Alpaca paper account PA3BW33Q5HH0
+2026-10-06T13:31:10+00:00  INFO  account status=ACTIVE equity=$5,048.30 cash=$61.99
+2026-10-06T13:35:30+00:00  INFO  paper endpoint (set ALPACA_LIVE=true for real money)
+2026-10-06T13:35:31+00:00  INFO  account permits 4x margin; plan deploys 100.00% of the capital it was handed, so no leverage is used
+2026-10-06T13:35:31+00:00  INFO  plan: 5 orders, $70.35 turnover (1.39% of deployed capital), 296 target names
+2026-10-06T13:35:31+00:00  INFO    BUY  CIBR   weight=0.34% delta=$+17.06
+2026-10-06T13:35:31+00:00  INFO    SELL AKAM   weight=0.00% delta=$-16.70
+2026-10-06T13:35:31+00:00  INFO    SELL QRVO   weight=0.00% delta=$-16.94
+2026-10-06T13:35:31+00:00  INFO    SELL KMI    weight=0.00% delta=$-16.83
+2026-10-06T13:35:31+00:00  INFO    SELL CTVA   weight=0.00% delta=$-2.82
+2026-10-06T13:35:37+00:00  WARN  order rejected: QRVO — HTTP Error 422: Unprocessable Entity
+2026-10-06T13:35:37+00:00  INFO  run recorded in state/last_run.json
