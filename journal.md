@@ -437,3 +437,8 @@ Append-only log of every run. Written by run_daily.py.
 2026-10-07T13:39:22+00:00  WARN  order rejected: WBD — HTTP Error 422: Unprocessable Entity
 2026-10-07T13:39:22+00:00  WARN  order rejected: QRVO — HTTP Error 422: Unprocessable Entity
 2026-10-07T13:39:22+00:00  INFO  run recorded in state/last_run.json
+2026-10-07T20:02:43+00:00  INFO  === moving-average close-of-day summary 2026-10-07 ===
+2026-10-07T20:02:43+00:00  INFO  summarising Alpaca paper account PA3BW33Q5HH0
+2026-10-07T20:02:45+00:00  INFO  session P&L: -4.83 ($5,010.73 at the open -> $5,005.90 at the close, 391 minute marks)
+2026-10-07T20:02:45+00:00  INFO  close-of-day: equity=$5,006.40 positions=$4,911.70 across 296 names (traded today: True)
+2026-10-07T20:02:45+00:00  WARN  close-of-day email did not send; leaving the day open so the later fire retries
