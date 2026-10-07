@@ -415,3 +415,25 @@ Append-only log of every run. Written by run_daily.py.
 2026-10-06T20:02:54+00:00  INFO  session P&L: -2.95 ($5,046.49 at the open -> $5,043.54 at the close, 391 minute marks)
 2026-10-06T20:02:54+00:00  INFO  close-of-day: equity=$5,044.23 positions=$4,963.39 across 297 names (traded today: True)
 2026-10-06T20:02:54+00:00  WARN  close-of-day email did not send; leaving the day open so the later fire retries
+2026-10-07T13:31:07+00:00  INFO  === moving-average daily run 2026-10-07 (execute=True) ===
+2026-10-07T13:31:07+00:00  INFO  trading Alpaca paper account PA3BW33Q5HH0
+2026-10-07T13:31:07+00:00  INFO  account status=ACTIVE equity=$5,011.49 cash=$80.82
+2026-10-07T13:39:14+00:00  INFO  paper endpoint (set ALPACA_LIVE=true for real money)
+2026-10-07T13:39:14+00:00  INFO  account permits 4x margin; plan deploys 100.00% of the capital it was handed, so no leverage is used
+2026-10-07T13:39:14+00:00  INFO  plan: 13 orders, $217.05 turnover (4.33% of deployed capital), 294 target names
+2026-10-07T13:39:14+00:00  INFO    BUY  ADBE   weight=0.34% delta=$+17.05
+2026-10-07T13:39:14+00:00  INFO    BUY  VLTO   weight=0.34% delta=$+17.05
+2026-10-07T13:39:14+00:00  INFO    BUY  MGM    weight=0.34% delta=$+17.05
+2026-10-07T13:39:14+00:00  INFO    BUY  META   weight=0.34% delta=$+17.05
+2026-10-07T13:39:14+00:00  INFO    BUY  WTW    weight=0.34% delta=$+17.05
+2026-10-07T13:39:14+00:00  INFO    SELL WBD    weight=0.00% delta=$-16.53
+2026-10-07T13:39:14+00:00  INFO    SELL QRVO   weight=0.00% delta=$-16.94
+2026-10-07T13:39:14+00:00  INFO    SELL PFG    weight=0.00% delta=$-15.69
+2026-10-07T13:39:14+00:00  INFO    SELL PHM    weight=0.00% delta=$-15.64
+2026-10-07T13:39:14+00:00  INFO    SELL HIG    weight=0.00% delta=$-16.66
+2026-10-07T13:39:14+00:00  INFO    SELL IP     weight=0.00% delta=$-15.41
+2026-10-07T13:39:14+00:00  INFO    SELL EXR    weight=0.00% delta=$-16.72
+2026-10-07T13:39:14+00:00  INFO    SELL CBOE   weight=0.00% delta=$-18.23
+2026-10-07T13:39:22+00:00  WARN  order rejected: WBD — HTTP Error 422: Unprocessable Entity
+2026-10-07T13:39:22+00:00  WARN  order rejected: QRVO — HTTP Error 422: Unprocessable Entity
+2026-10-07T13:39:22+00:00  INFO  run recorded in state/last_run.json
