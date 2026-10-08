@@ -442,3 +442,23 @@ Append-only log of every run. Written by run_daily.py.
 2026-10-07T20:02:45+00:00  INFO  session P&L: -4.83 ($5,010.73 at the open -> $5,005.90 at the close, 391 minute marks)
 2026-10-07T20:02:45+00:00  INFO  close-of-day: equity=$5,006.40 positions=$4,911.70 across 296 names (traded today: True)
 2026-10-07T20:02:45+00:00  WARN  close-of-day email did not send; leaving the day open so the later fire retries
+2026-10-08T13:31:05+00:00  INFO  === moving-average daily run 2026-10-08 (execute=True) ===
+2026-10-08T13:31:05+00:00  INFO  trading Alpaca paper account PA3BW33Q5HH0
+2026-10-08T13:31:05+00:00  INFO  account status=ACTIVE equity=$4,985.70 cash=$94.68
+2026-10-08T13:38:55+00:00  INFO  paper endpoint (set ALPACA_LIVE=true for real money)
+2026-10-08T13:38:55+00:00  INFO  account permits 4x margin; plan deploys 100.00% of the capital it was handed, so no leverage is used
+2026-10-08T13:38:55+00:00  INFO  plan: 11 orders, $184.21 turnover (3.69% of deployed capital), 297 target names
+2026-10-08T13:38:55+00:00  INFO    BUY  BAX    weight=0.34% delta=$+16.79
+2026-10-08T13:38:55+00:00  INFO    BUY  CTVA   weight=0.34% delta=$+16.79
+2026-10-08T13:38:55+00:00  INFO    BUY  COR    weight=0.34% delta=$+16.79
+2026-10-08T13:38:55+00:00  INFO    BUY  EME    weight=0.34% delta=$+16.79
+2026-10-08T13:38:55+00:00  INFO    BUY  NTNX   weight=0.34% delta=$+16.79
+2026-10-08T13:38:55+00:00  INFO    BUY  PTC    weight=0.34% delta=$+16.79
+2026-10-08T13:38:55+00:00  INFO    SELL WBD    weight=0.00% delta=$-16.53
+2026-10-08T13:38:55+00:00  INFO    SELL TTWO   weight=0.00% delta=$-16.73
+2026-10-08T13:38:55+00:00  INFO    SELL QRVO   weight=0.00% delta=$-16.94
+2026-10-08T13:38:55+00:00  INFO    SELL PLD    weight=0.00% delta=$-15.86
+2026-10-08T13:38:55+00:00  INFO    SELL CASY   weight=0.00% delta=$-17.43
+2026-10-08T13:39:01+00:00  WARN  order rejected: WBD — HTTP Error 422: Unprocessable Entity
+2026-10-08T13:39:01+00:00  WARN  order rejected: QRVO — HTTP Error 422: Unprocessable Entity
+2026-10-08T13:39:01+00:00  INFO  run recorded in state/last_run.json
