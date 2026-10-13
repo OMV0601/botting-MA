@@ -510,3 +510,17 @@ Append-only log of every run. Written by run_daily.py.
 2026-10-12T20:02:54+00:00  INFO  session P&L: -14.26 ($5,048.51 at the open -> $5,034.25 at the close, 391 minute marks)
 2026-10-12T20:02:54+00:00  INFO  close-of-day: equity=$5,032.97 positions=$4,904.83 across 294 names (traded today: True)
 2026-10-12T20:02:54+00:00  WARN  close-of-day email did not send; leaving the day open so the later fire retries
+2026-10-13T13:31:06+00:00  INFO  === moving-average daily run 2026-10-13 (execute=True) ===
+2026-10-13T13:31:06+00:00  INFO  trading Alpaca paper account PA3BW33Q5HH0
+2026-10-13T13:31:06+00:00  INFO  account status=ACTIVE equity=$5,024.21 cash=$144.68
+2026-10-13T13:39:13+00:00  INFO  paper endpoint (set ALPACA_LIVE=true for real money)
+2026-10-13T13:39:13+00:00  INFO  account permits 4x margin; plan deploys 100.00% of the capital it was handed, so no leverage is used
+2026-10-13T13:39:13+00:00  INFO  plan: 6 orders, $100.27 turnover (2.00% of deployed capital), 289 target names
+2026-10-13T13:39:13+00:00  INFO    BUY  RMD    weight=0.35% delta=$+17.38
+2026-10-13T13:39:13+00:00  INFO    SELL TFC    weight=0.00% delta=$-16.41
+2026-10-13T13:39:13+00:00  INFO    SELL QRVO   weight=0.00% delta=$-16.94
+2026-10-13T13:39:13+00:00  INFO    SELL EME    weight=0.00% delta=$-16.51
+2026-10-13T13:39:13+00:00  INFO    SELL BAX    weight=0.00% delta=$-17.60
+2026-10-13T13:39:13+00:00  INFO    SELL AAL    weight=0.00% delta=$-15.43
+2026-10-13T13:39:18+00:00  WARN  order rejected: QRVO — HTTP Error 422: Unprocessable Entity
+2026-10-13T13:39:18+00:00  INFO  run recorded in state/last_run.json
