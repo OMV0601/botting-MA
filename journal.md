@@ -524,3 +524,8 @@ Append-only log of every run. Written by run_daily.py.
 2026-10-13T13:39:13+00:00  INFO    SELL AAL    weight=0.00% delta=$-15.43
 2026-10-13T13:39:18+00:00  WARN  order rejected: QRVO — HTTP Error 422: Unprocessable Entity
 2026-10-13T13:39:18+00:00  INFO  run recorded in state/last_run.json
+2026-10-13T20:02:51+00:00  INFO  === moving-average close-of-day summary 2026-10-13 ===
+2026-10-13T20:02:51+00:00  INFO  summarising Alpaca paper account PA3BW33Q5HH0
+2026-10-13T20:02:54+00:00  INFO  session P&L: +4.88 ($5,025.71 at the open -> $5,030.59 at the close, 391 minute marks)
+2026-10-13T20:02:54+00:00  INFO  close-of-day: equity=$5,030.55 positions=$4,837.46 across 290 names (traded today: True)
+2026-10-13T20:02:54+00:00  WARN  close-of-day email did not send; leaving the day open so the later fire retries
