@@ -541,3 +541,8 @@ Append-only log of every run. Written by run_daily.py.
 2026-10-14T13:40:20+00:00  INFO    SELL CLSK   weight=0.00% delta=$-11.93
 2026-10-14T13:40:20+00:00  INFO    SELL VMRK   weight=0.00% delta=$-16.43
 2026-10-14T13:40:26+00:00  INFO  run recorded in state/last_run.json
+2026-10-14T20:02:52+00:00  INFO  === moving-average close-of-day summary 2026-10-14 ===
+2026-10-14T20:02:52+00:00  INFO  summarising Alpaca paper account PA3BW33Q5HH0
+2026-10-14T20:02:56+00:00  INFO  session P&L: -20.85 ($4,999.95 at the open -> $4,979.10 at the close, 391 minute marks)
+2026-10-14T20:02:56+00:00  INFO  close-of-day: equity=$4,977.86 positions=$4,737.01 across 286 names (traded today: True)
+2026-10-14T20:02:56+00:00  WARN  close-of-day email did not send; leaving the day open so the later fire retries
