@@ -548,3 +548,8 @@ Append-only log of every run. Written by run_daily.py.
 2026-10-14T20:02:56+00:00  WARN  close-of-day email did not send; leaving the day open so the later fire retries
 2026-10-15T13:31:14+00:00  INFO  === moving-average daily run 2026-10-15 (execute=True) ===
 2026-10-15T13:31:14+00:00  HALT  HALT file present at /home/runner/work/botting-MA/botting-MA/HALT — refusing to trade. Delete it to resume.
+2026-10-15T20:02:48+00:00  INFO  === moving-average close-of-day summary 2026-10-15 ===
+2026-10-15T20:02:48+00:00  INFO  summarising Alpaca paper account PA3BW33Q5HH0
+2026-10-15T20:02:51+00:00  INFO  session P&L: +47.45 ($4,976.44 at the open -> $5,023.89 at the close, 391 minute marks)
+2026-10-15T20:02:51+00:00  INFO  close-of-day: equity=$5,023.43 positions=$4,782.45 across 286 names (traded today: False)
+2026-10-15T20:02:51+00:00  WARN  close-of-day email did not send; leaving the day open so the later fire retries
