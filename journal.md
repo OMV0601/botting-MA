@@ -593,3 +593,6 @@ Append-only log of every run. Written by run_daily.py.
 2026-10-22T20:02:50+00:00  INFO  session P&L: +17.45 ($5,013.26 at the open -> $5,030.71 at the close, 391 minute marks)
 2026-10-22T20:02:50+00:00  INFO  close-of-day: equity=$5,031.79 positions=$4,789.97 across 286 names (traded today: False)
 2026-10-22T20:02:50+00:00  WARN  close-of-day email did not send; leaving the day open so the later fire retries
+2026-10-23T13:31:05+00:00  INFO  === moving-average daily run 2026-10-23 (execute=True) ===
+2026-10-23T13:31:05+00:00  HALT  HALT file present at /home/runner/work/botting-MA/botting-MA/HALT — refusing to trade. Delete it to resume.
+2026-10-23T13:31:05+00:00  WARN  STALE: no completed run since 2026-10-14 (7 trading days). Latest attempt: HALT file present
