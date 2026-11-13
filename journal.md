@@ -945,3 +945,41 @@ Traceback (most recent call last):
 urllib.error.HTTPError: HTTP Error 401: Unauthorized
 
 2026-11-12T20:45:37+00:00  WARN  STALE: no completed run since 2026-10-14 (21 trading days). Latest attempt: urllib.error.HTTPError: HTTP Error 401: Unauthorized
+2026-11-13T20:45:36+00:00  INFO  === moving-average close-of-day summary 2026-11-13 ===
+2026-11-13T20:45:36+00:00  ERROR unhandled exception:
+Traceback (most recent call last):
+  File "/home/runner/work/botting-MA/botting-MA/run_daily.py", line 580, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/runner/work/botting-MA/botting-MA/run_daily.py", line 438, in main
+    return close_of_day_summary(today)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/botting-MA/botting-MA/run_daily.py", line 294, in close_of_day_summary
+    acct_no = pt.assert_expected_account()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/botting-MA/botting-MA/paper_trade.py", line 171, in assert_expected_account
+    got = str(api("/v2/account").get("account_number", "")).strip()
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/botting-MA/botting-MA/paper_trade.py", line 139, in api
+    with urllib.request.urlopen(req, timeout=45) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: Unauthorized
+
+2026-11-13T20:45:36+00:00  WARN  STALE: no completed run since 2026-10-14 (22 trading days). Latest attempt: urllib.error.HTTPError: HTTP Error 401: Unauthorized
